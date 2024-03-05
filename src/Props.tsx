@@ -11,7 +11,7 @@
 
 // export default Parent;
 
-//type을 분리해서 적용하기
+// type을 분리해서 적용하기
 import { useState } from 'react';
 
 function Parent() {
