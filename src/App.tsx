@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+
+type Todo = {
+  id: string;
+  isDone: boolean;
+};
 
 function App() {
+  const [todos, setTodos] = useState<Todo[]>([]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {todos.map(({ id }) => (
+        <Todo key={id} id={id} setTodos={setTodos} />
+      ))}
+    </>
   );
+}
+
+function Todo({
+  id,
+  setTodos,
+}: {
+  id: string;
+  setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
+}) {
+  const deleteTodo = () => {
+    setTodos((prev) => prev.filter((todo) => todo.id !== id));
+  };
+  return <div onClick={deleteTodo}></div>;
 }
 
 export default App;
