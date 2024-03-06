@@ -46,3 +46,43 @@ export const ButtonStyle = styled.button`
   width: 100px;
   height: 40px;
 `;
+
+// Main.tsx
+export const MainWraper = styled.section`
+  width: 100%;
+  height: 800px;
+  background-color: #ccc;
+  font-size: 30px;
+`;
+export const MainTitle = styled.div`
+  padding: 10px;
+`;
+export const WorkingWraper = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+// Todo.tsx
+export const TodoWraper = styled.section`
+  width: 350px;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: 10px 0 0 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+`;
+export const TodoContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px;
+`;
+export const TodoButton = styled.div`
+  display: flex;
+  gap: 20px;
+  & > button {
+    width: 70px;
+    height: 30px;
+    margin-top: 30px;
+  }
+`;
