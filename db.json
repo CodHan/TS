@@ -1,13 +1,12 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "todos": [
+    { "id": "1", "title": "a title", "content": "a content", "isDone": false },
+    { "id": "2", "title": "제목이다", "content": "내용이다아", "isDone": true },
+    {
+      "id": "3",
+      "title": "3개는해봐야지",
+      "content": "맞지맞지",
+      "isDone": false
+    }
+  ]
 }

@@ -1,5 +1,10 @@
 import * as S from '../styles/Styles';
 const Input = () => {
+  const newTodo = {
+    content: '',
+    title: '',
+    isDone: false,
+  };
   return (
     <S.InputWraper>
       <div>
