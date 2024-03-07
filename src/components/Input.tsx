@@ -1,13 +1,13 @@
 import { ChangeEvent, useState } from 'react';
 import * as S from '../styles/Styles';
-import { QueryClient, useMutation } from 'react-query';
+import { useMutation, useQueryClient } from 'react-query';
 import { addTodo } from './todos';
 import uuid from 'react-uuid';
 const Input = () => {
   const [title, setTitle] = useState<string>('');
   const [content, setContent] = useState<string>('');
 
-  const queryClient = new QueryClient();
+  const queryClient = useQueryClient();
 
   const mutation = useMutation(addTodo, {
     onSuccess: () => {
