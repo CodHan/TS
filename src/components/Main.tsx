@@ -1,18 +1,8 @@
-import { useEffect } from 'react';
 import * as S from '../styles/Styles';
 import DoneTodo from './DoneTodo';
 import WorkingTodo from './WorkingTodo';
-import api from '../components/api';
 
 const Main = () => {
-  useEffect(() => {
-    try {
-      api.get('/todos').then((res) => console.log(res.data));
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
-
   return (
     <S.MainWraper>
       <S.MainTitle>하는중..🔥</S.MainTitle>
