@@ -14,3 +14,10 @@ export const getTodos = async () => {
 export const addTodo = async (newTodo: Todo) => {
   await api.post('/todos', newTodo);
 };
+export const deleteTodo = async (id: string) => {
+  await api.delete(`/todos/${id}`);
+};
+export const updateTodo = async (payload: { id: string; updateTodo: Todo }) => {
+  const { id, updateTodo } = payload;
+  await api.patch(`/todos/${id}`, updateTodo);
+};
