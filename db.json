@@ -1,22 +1,10 @@
 {
   "todos": [
     {
-      "id": "1",
-      "title": "a title",
-      "content": "a content",
+      "id": "0a39fd94-efa4-6f25-465a-705320f6ae9f",
+      "content": "호오오오",
+      "title": "이야아아",
       "isDone": false
-    },
-    {
-      "id": "9851a868-cf07-c0db-dd76-21a1a0539828",
-      "content": "ㄴㅇ",
-      "title": "ㄴㅇ",
-      "isDone": true
-    },
-    {
-      "id": "36f18a35-d59c-33c3-2853-6aa0b4f10df7",
-      "content": "ㄴ",
-      "title": "ㄴ",
-      "isDone": true
     }
   ]
 }
