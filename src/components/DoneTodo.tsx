@@ -18,6 +18,7 @@ const DoneTodo = () => {
     },
   });
   //삭제버튼
+  //확인
   const handDelete = (id: string) => {
     const confirm = window.confirm('정말 삭제합니까?');
     if (confirm) {
